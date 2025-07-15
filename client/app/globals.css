@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Load local Reporter font */
+@font-face {
+  font-family: "Reporter";
+  src: url("/font/reporter/reportr.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Theme Colors and Fonts (Tailwind v4) */
+@theme inline {
+  --color-background: #fdf8f2;
+  --color-foreground: #171717;
+  --color-primary: #51bd4c;
+  --color-secondary: #fff2e3;
+  --color-black: #3c3c3c;
+  --color-white: #fdf8f2;
+  --color-muted: #bcbcbc;
+  --color-muted-fill: #dddddd30;
+  --color-coffee: #9e6515;
+  --color-primary-dark: #2e872a;
+
+  --font-lato: var(--font-lato);
+  --font-reporter: "Reporter", serif;
+}
+
+/* Base styling */
+body {
+  font-family: var(--font-lato), system-ui, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+}
+
+/* Tailwind utility for Reporter font */
+@layer utilities {
+  .font-reporter {
+    font-family: var(--font-reporter);
+  }
+}
