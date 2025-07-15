@@ -10,7 +10,7 @@ export default function HomeHero() {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/hero/hero.jpeg"
+          src="/hero/hero2.jpg"
           alt="Students in barista class"
           fill
           priority
@@ -18,7 +18,7 @@ export default function HomeHero() {
           className="object-cover object-right"
         />
         {/* Fixed Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-r from-black via-70% to-transparent " />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#120905]/95 from-40% via-[#120905]/90 via-65% to-transparent to-100% z-0  " />
       </div>
 
       {/* Content */}
