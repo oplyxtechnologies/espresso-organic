@@ -7,7 +7,15 @@ export default function FooterCTA() {
   return (
     <section className="bg-[#FFFAF3] py-20 px-6 md:px-12 border-t border-[#e5e5e5]">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        {/* Left Text */}
+        {/* Illustration or Image (Optional) */}
+        <div className="flex justify-center">
+          <img
+            src="/coffee-chat.svg" // Replace with your actual asset
+            alt="Coffee Chat Illustration"
+            className="max-w-xs md:max-w-sm"
+          />
+        </div>
+        {/* Text */}
         <div>
           <motion.h2
             className="text-3xl sm:text-4xl font-reporter text-[#2B1E17] mb-4"
@@ -23,8 +31,8 @@ export default function FooterCTA() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
           >
-            We’d love to hear from you. Whether you're curious about our barista
-            programs or just want to talk coffee — we're here.
+            We&apos;d love to hear from you. Whether you're curious about our
+            barista programs or just want to talk coffee — we're here.
           </motion.p>
           <motion.div
             className="flex flex-col sm:flex-row gap-4"
@@ -45,15 +53,6 @@ export default function FooterCTA() {
               Explore Programs
             </Link>
           </motion.div>
-        </div>
-
-        {/* Right Illustration or Image (Optional) */}
-        <div className="flex justify-center">
-          <img
-            src="/coffee-chat.svg" // Replace with your actual asset
-            alt="Coffee Chat Illustration"
-            className="max-w-xs md:max-w-sm"
-          />
         </div>
       </div>
     </section>

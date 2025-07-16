@@ -1,9 +1,14 @@
-"use client";
-
 import Image from "next/image";
 import { Mail, MapPin, Phone } from "lucide-react";
 import Link from "next/link";
 import ContactForm from "@/components/ContactForm/ContactForm";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact | Espresso Organic Coffee",
+  description:
+    "Get in touch with Espresso Organic Coffee for inquiries, locations, and more.",
+};
 
 export default function ContactPage() {
   return (

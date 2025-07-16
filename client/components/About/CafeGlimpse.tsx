@@ -40,14 +40,14 @@ export default function CafeGlimpse() {
               key={i}
               className={`relative overflow-hidden ${
                 isMiddle
-                  ? "w-[120%] md:w-[130%] h-48 rounded-lg " // Wider lettuce layer
-                  : "w-[100%] md:w-[110%] h-48 "
+                  ? "w-[120%] md:w-[130%] h-10 md:h-48 rounded-lg " // Wider lettuce layer
+                  : "w-[100%] md:w-[110%] h-[100px] md:h-[150px] "
               } ${
                 isTop
-                  ? "rounded-t-[100px] md:rounded-t-[140px]"
+                  ? "rounded-t-[50px] md:rounded-t-[140px] h-[100px] md:h-[150px]"
                   : isBottom
-                  ? "rounded-b-[100px] md:rounded-b-[140px]"
-                  : "rounded-none"
+                  ? "rounded-b-[50px] md:rounded-b-[140px]"
+                  : "rounded-full"
               } aspect-[5/1]`}
             >
               <Image

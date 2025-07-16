@@ -25,7 +25,7 @@ export default function WhoStarted() {
         </div>
 
         {/* Image */}
-        <div className="md:w-1/2 flex justify-center">
+        <div className="md:w-1/2 p-4 flex justify-center">
           <img
             src="/images/chairman.jpeg" // Replace with your actual path
             alt="Man Bahadur Shrestha, Chairman of Espresso Organic"

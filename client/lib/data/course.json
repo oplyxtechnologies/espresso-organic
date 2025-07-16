@@ -1,0 +1,161 @@
+[
+  {
+    "slug": "barista-foundation",
+    "title": "Foundation Barista Course",
+    "price": 9999,
+    "description": "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
+    "longDescription": "This course is designed for aspiring baristas. You'll dive into espresso theory, learn milk texturing, and practice customer service in a real café environment. Perfect for beginners seeking hands-on coffee experience.",
+    "image": "/courses/foundation.jpg",
+    "level": "Beginner",
+    "duration": "40h",
+    "lectures": 20,
+    "instructor": {
+      "name": "Manish Shrestha",
+      "role": "Head Barista",
+      "rating": 4.8
+    },
+    "curriculum": [
+      {
+        "title": "Espresso Basics",
+        "lectures": [
+          "What is Espresso?",
+          "Understanding Beans & Grinds",
+          "Using an Espresso Machine"
+        ]
+      },
+      {
+        "title": "Milk Steaming & Texturing",
+        "lectures": [
+          "Steaming Basics",
+          "Microfoam Techniques",
+          "Pouring Latte Art"
+        ]
+      },
+      {
+        "title": "Café Workflow",
+        "lectures": [
+          "Bar Setup & Cleaning",
+          "Taking Orders",
+          "Customer Service"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I need any experience to join?",
+        "a": "No prior experience is required. This course is perfect for beginners."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you'll receive a Barista Certificate after successful completion."
+      }
+    ],
+    "category": "barista"
+  },
+  {
+    "slug": "barista-foundation",
+    "title": "Foundation Barista Course",
+    "price": 9999,
+    "description": "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
+    "longDescription": "This course is designed for aspiring baristas. You'll dive into espresso theory, learn milk texturing, and practice customer service in a real café environment. Perfect for beginners seeking hands-on coffee experience.",
+    "image": "/courses/foundation.jpg",
+    "level": "Beginner",
+    "duration": "40h",
+    "lectures": 20,
+    "instructor": {
+      "name": "Manish Shrestha",
+      "role": "Head Barista",
+      "rating": 4.8
+    },
+    "curriculum": [
+      {
+        "title": "Espresso Basics",
+        "lectures": [
+          "What is Espresso?",
+          "Understanding Beans & Grinds",
+          "Using an Espresso Machine"
+        ]
+      },
+      {
+        "title": "Milk Steaming & Texturing",
+        "lectures": [
+          "Steaming Basics",
+          "Microfoam Techniques",
+          "Pouring Latte Art"
+        ]
+      },
+      {
+        "title": "Café Workflow",
+        "lectures": [
+          "Bar Setup & Cleaning",
+          "Taking Orders",
+          "Customer Service"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I need any experience to join?",
+        "a": "No prior experience is required. This course is perfect for beginners."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you'll receive a Barista Certificate after successful completion."
+      }
+    ],
+    "category": "barista"
+  },
+  {
+    "slug": "barista-foundation",
+    "title": "Foundation Barista Course",
+    "price": 9999,
+    "description": "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
+    "longDescription": "This course is designed for aspiring baristas. You'll dive into espresso theory, learn milk texturing, and practice customer service in a real café environment. Perfect for beginners seeking hands-on coffee experience.",
+    "image": "/courses/foundation.jpg",
+    "level": "Beginner",
+    "duration": "40h",
+    "lectures": 20,
+    "instructor": {
+      "name": "Manish Shrestha",
+      "role": "Head Barista",
+      "rating": 4.8
+    },
+    "curriculum": [
+      {
+        "title": "Espresso Basics",
+        "lectures": [
+          "What is Espresso?",
+          "Understanding Beans & Grinds",
+          "Using an Espresso Machine"
+        ]
+      },
+      {
+        "title": "Milk Steaming & Texturing",
+        "lectures": [
+          "Steaming Basics",
+          "Microfoam Techniques",
+          "Pouring Latte Art"
+        ]
+      },
+      {
+        "title": "Café Workflow",
+        "lectures": [
+          "Bar Setup & Cleaning",
+          "Taking Orders",
+          "Customer Service"
+        ]
+      }
+    ],
+    "faqs": [
+      {
+        "q": "Do I need any experience to join?",
+        "a": "No prior experience is required. This course is perfect for beginners."
+      },
+      {
+        "q": "Will I get a certificate?",
+        "a": "Yes, you'll receive a Barista Certificate after successful completion."
+      }
+    ],
+    "category": "barista"
+  }
+]

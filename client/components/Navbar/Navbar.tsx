@@ -11,8 +11,8 @@ import { motion, AnimatePresence } from "framer-motion";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Barista Training", href: "/barista-training" },
-  { name: "Blogs", href: "/blogs" },
+  { name: "Barista Training", href: "/training" },
+  { name: "Blogs", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -49,7 +49,7 @@ export default function Navbar() {
           animate={{ y: 0 }}
           exit={{ y: -80 }}
           transition={{ duration: 0.25, ease: "easeInOut" }}
-          className="fixed top-0 left-0 w-full z-50 font-reporter bg-[color:var(--color-white)] shadow-sm"
+          className="fixed top-0 left-0 w-full z-50 font-reporter bg-[color:var(--color-white)]/95 backdrop-blur-3xl   "
         >
           <nav className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
             {/* Logo */}
