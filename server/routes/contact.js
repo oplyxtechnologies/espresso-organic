@@ -9,15 +9,16 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 router.post("/", async (req, res) => {
   const { name, email, phone, subject, message } = req.body;
 
+  // ✅ Basic validation
   if (!name || !email || !phone || !subject || !message) {
     return res.status(400).json({ message: "All fields are required." });
   }
 
   try {
-    // Save to MongoDB
+    // ✅ Save to MongoDB (auto-validates via schema if defined)
     await Contact.create({ name, email, phone, subject, message });
 
-    // Client confirmation email
+    // ✅ Send confirmation to client
     await resend.emails.send({
       from: "Espresso Organic <connect@oplyx.tech>",
       to: [email],
@@ -41,7 +42,7 @@ router.post("/", async (req, res) => {
       `,
     });
 
-    // Admin branded email
+    // ✅ Send notification to admin
     await resend.emails.send({
       from: "Espresso Organic <connect@oplyx.tech>",
       to: [process.env.EMAIL_TO],
@@ -62,11 +63,14 @@ router.post("/", async (req, res) => {
       `,
     });
 
-    // Response to frontend
-    res.status(200).json({ message: "Message sent successfully." });
+    return res.status(200).json({ message: "Message sent successfully." });
   } catch (error) {
-    console.error("❌ Error sending email or saving contact:", error);
-    res.status(500).json({ message: "Something went wrong." });
+    console.error("❌ Error in contact route:", error);
+
+    // ✅ Return meaningful error in production-safe way
+    return res.status(500).json({
+      message: "Something went wrong. Please try again later.",
+    });
   }
 });
 
