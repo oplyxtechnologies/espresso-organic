@@ -124,7 +124,7 @@ export default function Navbar() {
                     </button>
                   </div>
 
-                  <div className="flex flex-col px-4 text-black py-4 space-y-10 text-2xl text-center ">
+                  <div className="flex flex-col bg-white min-h-screen px-4 text-black py-4 space-y-10 text-2xl text-center ">
                     {navLinks.map((link) => (
                       <Link
                         key={link.name}
