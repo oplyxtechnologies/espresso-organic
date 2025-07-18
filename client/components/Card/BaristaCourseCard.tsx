@@ -17,7 +17,10 @@ export default function BaristaCourseCard({
   slug,
 }: Props) {
   return (
-    <div className="border border-[#E5E5E5] rounded-md p-4 bg-white hover:bg-[color:var(--color-muted-fill)] hover:shadow-md transition flex flex-col h-full">
+    <Link
+      href={slug}
+      className="border border-[#E5E5E5] rounded-md p-4 bg-white hover:bg-[color:var(--color-muted-fill)] hover:shadow-md transition flex flex-col h-full"
+    >
       <div className="rounded overflow-hidden mb-4">
         <Image
           src={image}
@@ -33,13 +36,9 @@ export default function BaristaCourseCard({
       <p className="text-sm text-[color:var(--color-text)] flex-grow mb-4">
         {description}
       </p>
-
-      <Link
-        href={slug}
-        className="mt-auto text-sm text-black font-medium hover:underline flex items-center gap-1"
-      >
+      <div className="mt-auto text-sm text-black font-medium hover:underline flex items-center gap-1">
         Learn More <ArrowRight size={14} />
-      </Link>
-    </div>
+      </div>
+    </Link>
   );
 }
