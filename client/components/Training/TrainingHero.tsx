@@ -46,7 +46,7 @@ export default function BaristaHero() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl"
+          className="relative w-full   h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl"
         >
           <Image
             src="/hero/barista-training-hero.jpeg"

@@ -39,9 +39,9 @@ export default function Home() {
       </section>
 
       {/* Blog Preview */}
-      <section className="py-20 px-4 md:px-8 bg-[#FFFAF3]">
+      {/* <section className="py-20 px-4 md:px-8 bg-[#FFFAF3]">
         <BlogPreview />
-      </section>
+      </section> */}
 
       {/* Final Call To Action */}
       <section className="py-20 px-4 md:px-8">
