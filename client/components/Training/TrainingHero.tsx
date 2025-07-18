@@ -49,7 +49,7 @@ export default function BaristaHero() {
           className="relative w-full h-[400px] md:h-[500px] rounded-xl overflow-hidden shadow-xl"
         >
           <Image
-            src="/hero/training-hero.jpeg"
+            src="/hero/barista-training-hero.jpeg"
             alt="Barista Training"
             fill
             className="object-cover"
