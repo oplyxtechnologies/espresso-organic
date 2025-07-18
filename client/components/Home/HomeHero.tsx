@@ -59,7 +59,7 @@ export default function HomeHero() {
             transition={{ duration: 0.6, ease: "easeOut", delay: 0.5 }}
           >
             <Link
-              href="/barista-training"
+              href="/training"
               className="px-6 py-3 text-sm font-semibold rounded-sm bg-[#F03232] hover:bg-[#BC0707] text-white transition"
             >
               Explore Training

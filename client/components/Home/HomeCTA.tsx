@@ -47,7 +47,7 @@ export default function FooterCTA() {
               Contact Us
             </Link>
             <Link
-              href="/barista-training"
+              href="/training"
               className="px-6 py-3 text-sm font-medium rounded-sm border border-[#2B1E17] text-[#2B1E17] hover:bg-[#2B1E17] hover:text-white transition"
             >
               Explore Programs

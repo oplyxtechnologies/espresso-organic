@@ -16,7 +16,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="relative w-full min-h-[50vh] flex items-center justify-center text-white overflow-hidden">
         <Image
-          src="/hero/contact-espresso.jpg"
+          src="/courses/foundation.jpg"
           alt="Espresso Contact"
           fill
           quality={100}
@@ -49,11 +49,11 @@ export default function ContactPage() {
             <h3 className="text-xl font-semibold">Head Office – Kathmandu</h3>
             <p className="flex items-center gap-2 text-sm">
               <MapPin size={16} />
-              Jhamsikhel, Lalitpur, Nepal
+              Thapagaun, New Baneshwor, Kathmandu
             </p>
             <p className="flex items-center gap-2 text-sm">
               <Phone size={16} />
-              <Link href="tel:+977123456789">+977 123-456789</Link>
+              <Link href="tel:+977123456789">+977 9818272352</Link>
             </p>
             <p className="flex items-center gap-2 text-sm">
               <Mail size={16} />
@@ -101,7 +101,7 @@ export default function ContactPage() {
       <section className="w-full h-[300px]">
         <iframe
           title="Espresso Organic Location"
-          src="https://maps.google.com/maps?q=Jhamsikhel%20Lalitpur%20Nepal&t=&z=13&ie=UTF8&iwloc=&output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1485.391504335579!2d85.333140488364!3d27.69021814216561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19bd83cfd63f%3A0xe1e41c8aad8e23f8!2sEspresso%20Organic%20Coffee%20House!5e0!3m2!1sen!2snp!4v1752815300854!5m2!1sen!2snp"
           width="100%"
           height="100%"
           style={{ border: 0 }}

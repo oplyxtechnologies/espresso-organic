@@ -2,7 +2,7 @@
 
 export default function WhoStarted() {
   return (
-    <section className="bg-[#FFF8F2] py-20 px-4 md:px-10 lg:px-20">
+    <section id="journey" className="bg-[#FFF8F2] py-20 px-4 md:px-10 lg:px-20">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
         {/* Text Content */}
         <div className="md:w-1/2">

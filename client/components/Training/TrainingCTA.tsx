@@ -10,7 +10,7 @@ export default function TrainingCTA() {
           café settings, and expert baristas guiding your way.
         </p>
         <a
-          href="/contact"
+          href="/training/courseenquiry"
           className="inline-block mt-4 px-6 py-3 bg-[#CB5B2C] text-white rounded-sm font-medium hover:bg-[#a44922] transition"
         >
           Enroll Now
