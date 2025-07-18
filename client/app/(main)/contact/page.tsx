@@ -74,7 +74,7 @@ export default function ContactPage() {
               </p>
               <p className="text-sm flex items-center gap-2">
                 <Phone size={16} />{" "}
-                <Link href="tel:+9779800000001">+977 9800000001</Link>
+                <Link href="tel:+9779707553562">+977 9707553562</Link>
               </p>
             </div>
             <div className="space-y-1">
@@ -84,7 +84,7 @@ export default function ContactPage() {
               </p>
               <p className="text-sm flex items-center gap-2 ">
                 <Phone size={16} />{" "}
-                <Link href="tel:+9779800000002">+977 9800000002</Link>
+                <Link href="tel:+9779706114353">+977 9706114353</Link>
               </p>
             </div>
           </div>
