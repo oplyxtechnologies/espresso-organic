@@ -49,11 +49,11 @@ export default function ContactPage() {
             <h3 className="text-xl font-semibold">Head Office – Kathmandu</h3>
             <p className="flex items-center gap-2 text-sm">
               <MapPin size={16} />
-              Jhamsikhel, Lalitpur, Nepal
+              Thapagaun, New Baneshwor, Kathmandu
             </p>
             <p className="flex items-center gap-2 text-sm">
               <Phone size={16} />
-              <Link href="tel:+977123456789">+977 123-456789</Link>
+              <Link href="tel:+977123456789">+977 9818272352</Link>
             </p>
             <p className="flex items-center gap-2 text-sm">
               <Mail size={16} />

@@ -5,7 +5,7 @@ const courseData = [
     description:
       "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
     image: "/courses/foundation.jpg",
-    link: "/barista-training/foundation",
+    link: "/training/foundation",
     badges: [
       { label: "Organic", icon: "leaf" },
       { label: "Hands-on Training", icon: "handshake" },
@@ -24,7 +24,7 @@ const courseData = [
     description:
       "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
     image: "/courses/foundation.jpg",
-    link: "/barista-training/foundation",
+    link: "/training/foundation",
     badges: [
       { label: "Organic", icon: "leaf" },
       { label: "Hands-on Training", icon: "handshake" },
@@ -43,7 +43,7 @@ const courseData = [
     description:
       "Learn espresso basics, milk steaming, and café workflow in a real barista setting. Perfect for beginners.",
     image: "/courses/foundation.jpg",
-    link: "/barista-training/foundation",
+    link: "/training/foundation",
     badges: [
       { label: "Organic", icon: "leaf" },
       { label: "Hands-on Training", icon: "handshake" },

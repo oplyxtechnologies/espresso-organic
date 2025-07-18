@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function CafeHero() {
   return (
-    <section className="relative bg-[#FFF8F2] overflow-hidden py-20 px-4 md:px-12 lg:px-20">
+    <section className="relative mt-10   bg-[#FFF8F2] overflow-hidden py-20 px-4 md:px-12 lg:px-20">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center gap-12">
         {/* Text Content */}
         <motion.div
@@ -40,7 +40,7 @@ export default function CafeHero() {
           className="relative w-full h-[360px] sm:h-[460px] md:h-[500px] rounded-xl overflow-hidden shadow-xl"
         >
           <Image
-            src="/cafe/cafe-hero.jpg" // Replace with your actual image path
+            src="/cafe-interior.jpg" // Replace with your actual image path
             alt="Espresso Organic Café"
             fill
             className="object-cover"

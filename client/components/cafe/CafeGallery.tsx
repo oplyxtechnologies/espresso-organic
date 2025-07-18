@@ -4,14 +4,16 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 const galleryImages = [
-  "/gallery/interior-1.jpg",
-  "/gallery/coffee-pour.jpg",
-  "/gallery/customers-laughing.jpg",
-  "/gallery/barista-art.jpg",
-  "/gallery/outdoor-seating.jpg",
-  "/gallery/coffee-closeup.jpg",
-  "/gallery/community-event.jpg",
-  "/gallery/pastries-display.jpg",
+  "/splash/1.jpeg",
+  "/splash/3.jpeg",
+  "/splash/8.jpeg",
+  "/splash/6.jpeg",
+  "/splash/4.jpeg",
+  "/splash/5.jpeg",
+  "/splash/2.jpeg",
+  "/splash/7.jpeg",
+  "/splash/9.jpeg",
+  "/splash/10.jpeg",
 ];
 
 export default function CafeGallerySection() {
@@ -23,12 +25,12 @@ export default function CafeGallerySection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-reporter text-[#2B1E17] mb-10"
+          className="text-3xl md:text-4xl font-reporter text-[#2B1E17] mb-12"
         >
           Moments at Espresso Organic
         </motion.h2>
 
-        <div className="columns-1 sm:columns-2 md:columns-3 gap-4 space-y-4">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
           {galleryImages.map((src, idx) => (
             <motion.div
               key={idx}
@@ -38,7 +40,7 @@ export default function CafeGallerySection() {
               viewport={{ once: true }}
               className="overflow-hidden rounded-md shadow-sm hover:shadow-md transition"
             >
-              <div className="relative w-full h-auto aspect-[4/3]">
+              <div className="relative w-full h-[260px] md:h-[280px]">
                 <Image
                   src={src}
                   alt={`Cafe moment ${idx + 1}`}

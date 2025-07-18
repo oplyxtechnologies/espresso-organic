@@ -16,7 +16,7 @@ export default function OurJourneySection() {
           className="relative w-full h-[360px] sm:h-[420px] md:h-[500px] rounded-xl overflow-hidden shadow-md"
         >
           <Image
-            src="/cafe/our-journey.jpg" // Replace with your image path
+            src="/hero/hero2.jpg" // Replace with your image path
             alt="Our café story"
             fill
             className="object-cover"

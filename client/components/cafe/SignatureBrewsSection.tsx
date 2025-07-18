@@ -7,32 +7,32 @@ const brews = [
   {
     title: "Espresso",
     description: "Bold, intense, and beautifully balanced.",
-    image: "/brews/espresso.jpg",
+    image: "/brews/espresso.png",
   },
   {
     title: "Cappuccino",
     description: "Rich espresso topped with silky microfoam.",
-    image: "/brews/cappuccino.jpg",
+    image: "/brews/cappuccino.png",
   },
   {
     title: "Pour-over",
     description: "Slow-brewed to highlight clarity and body.",
-    image: "/brews/pourover.jpg",
+    image: "/brews/pourover.png",
   },
   {
     title: "Iced Latte",
     description: "Cold, creamy espresso with refreshing depth.",
-    image: "/brews/iced-latte.jpg",
+    image: "/brews/iced-latte.png",
   },
   {
     title: "Matcha Latte",
     description: "Earthy green tea with steamed oat milk.",
-    image: "/brews/matcha.jpg",
+    image: "/brews/matcha.png",
   },
   {
     title: "Cold Brew",
     description: "Smooth and bold with natural sweetness.",
-    image: "/brews/coldbrew.jpg",
+    image: "/brews/coldbrew.png",
   },
 ];
 
@@ -62,21 +62,25 @@ export default function SignatureBrewsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               viewport={{ once: true }}
-              className="bg-white rounded-lg overflow-hidden border border-[#E5E5E5] shadow-sm hover:shadow-md transition"
+              className="relative w-full h-64 rounded-lg overflow-hidden shadow-md group transition"
             >
-              <div className="relative w-full h-48">
-                <Image
-                  src={brew.image}
-                  alt={brew.title}
-                  fill
-                  className="object-cover"
-                />
-              </div>
-              <div className="p-4 text-left">
-                <h3 className="text-lg font-semibold text-[#2B1E17] mb-1">
+              {/* Image */}
+              <Image
+                src={brew.image}
+                alt={brew.title}
+                fill
+                className="object-cover"
+              />
+
+              {/* Gradient Overlay */}
+              <div className="absolute bottom-0 left-0 w-full h-[60%] bg-gradient-to-t from-[#000000] to-transparent z-10" />
+
+              {/* Text Content */}
+              <div className="absolute bottom-0 left-0 z-20 p-4 text-white">
+                <h3 className="text-lg text-left font-semibold mb-1">
                   {brew.title}
                 </h3>
-                <p className="text-sm text-[#6F5A48]">{brew.description}</p>
+                <p className="text-sm">{brew.description}</p>
               </div>
             </motion.div>
           ))}

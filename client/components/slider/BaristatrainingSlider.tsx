@@ -80,7 +80,7 @@ export default function BaristaTrainingSlider() {
       {/* CTA Button */}
       <div className="flex justify-center mt-12">
         <Link
-          href="/cafe"
+          href="/training"
           className="inline-block text-red-600 border border-red-500 px-6 py-2 rounded-md hover:bg-red-500 hover:text-white transition text-sm font-medium"
         >
           Learn More

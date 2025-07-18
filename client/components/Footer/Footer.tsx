@@ -1,9 +1,16 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { Mail, Phone, MapPin } from "lucide-react";
 
 export default function Footer() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="bg-[#2B1E17] text-white py-16 px-6 md:px-12">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
@@ -20,31 +27,19 @@ export default function Footer() {
         <div>
           <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-3 text-sm text-white/80">
-            <li>
-              <Link href="/barista-training" className="hover:underline">
-                Barista Training
-              </Link>
-            </li>
-            <li>
-              <Link href="/cafe" className="hover:underline">
-                Visit Our Café
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="hover:underline">
-                Our Journey
-              </Link>
-            </li>
-            <li>
-              <Link href="/blog" className="hover:underline">
-                Blog
-              </Link>
-            </li>
-            <li>
-              <Link href="/contact" className="hover:underline">
-                Contact
-              </Link>
-            </li>
+            {[
+              { href: "/training", label: "Barista Training" },
+              { href: "/cafe", label: "Visit Our Café" },
+              { href: "/about", label: "Our Journey" },
+              { href: "/blog", label: "Blog" },
+              { href: "/contact", label: "Contact" },
+            ].map((link) => (
+              <li key={link.href}>
+                <Link href={link.href} className="hover:underline">
+                  {link.label}
+                </Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -54,12 +49,12 @@ export default function Footer() {
           <ul className="space-y-4 text-sm text-white/80">
             <li className="flex items-start gap-3">
               <MapPin size={16} />
-              <span>123 Brew Street, Kathmandu, Nepal</span>
+              <span>Thapagaun, New Baneshwor, Kathmandu</span>
             </li>
             <li className="flex items-center gap-3">
               <Phone size={16} />
-              <a href="tel:+9779800000000" className="hover:underline">
-                +977 9800000000
+              <a href="tel:+9779818272352" className="hover:underline">
+                +977 9818272352
               </a>
             </li>
             <li className="flex items-center gap-3">
@@ -80,11 +75,18 @@ export default function Footer() {
           <p className="text-sm text-white/80 mb-4">
             Get updates on courses, events, and brews.
           </p>
-          <form className="flex flex-col sm:flex-row gap-3">
+          <form
+            className="flex flex-col sm:flex-row gap-3"
+            onSubmit={(e) => {
+              e.preventDefault();
+              // Optionally handle submission
+            }}
+          >
             <input
               type="email"
               placeholder="Your email"
-              className="w-full px-4 py-2 rounded-sm border border-white text-white text-sm"
+              required
+              className="w-full px-4 py-2 rounded-sm border border-white bg-transparent text-white text-sm placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[#E9691D]"
             />
             <button
               type="submit"
@@ -98,7 +100,7 @@ export default function Footer() {
 
       {/* Footer Bottom */}
       <div className="mt-12 border-t border-white/20 pt-6 text-center text-sm text-white/50">
-        &copy; {new Date().getFullYear()} Espresso Organic. All rights reserved.
+        &copy; {year ?? "----"} Espresso Organic. All rights reserved.
       </div>
     </footer>
   );
