@@ -10,43 +10,43 @@ import BlogSection from "@/components/Blogs/BlogSection";
 
 export default function Home() {
   return (
-    <main className="w-full overflow-x-hidden text-[color:var(--color-black)]">
+    <main className="w-full md:space-y-16 overflow-x-hidden text-[color:var(--color-black)]">
       {/* Hero Section */}
       <HomeHero />
 
       {/* Our Journey Timeline */}
-      <section className="py-10 px-4 md:px-8">
+      <section className=" px-4 md:px-8">
         <OurJourney />
       </section>
 
       {/* Barista Courses Slider */}
-      <section className="py-10 px-4 md:px-8 bg-[#FFFAF3]">
+      <section className=" px-4 md:px-8 bg-[#FFFAF3]">
         <BaristatrainingSlider />
       </section>
 
       {/* Café Showcase */}
-      <section className="py-10 px-4 md:px-8">
+      <section className=" px-4 md:px-8">
         <CafeSection />
       </section>
 
       {/* Farm Visit Experience */}
-      <section className="py-10 px-4 md:px-8 bg-[#FFFAF3]">
+      <section className=" px-4 md:px-8 bg-[#FFFAF3]">
         <FarmVisitSection />
       </section>
 
       {/* Community Testimonials */}
-      <section className="py-10 px-4 md:px-8">
+      <section className=" px-4 md:px-8">
         <TestimonialsSection />
       </section>
 
       {/* Blog Preview */}
-      {/* <section className="py-10 px-4 md:px-8 bg-[#FFFAF3]">
+      {/* <section className=" px-4 md:px-8 bg-[#FFFAF3]">
         <BlogPreview />
       </section> */}
       {/* <BlogSection /> */}
 
       {/* Final Call To Action */}
-      <section className="py-10 px-4 md:px-8">
+      <section className=" px-4 md:px-8">
         <FooterCTA />
       </section>
     </main>
