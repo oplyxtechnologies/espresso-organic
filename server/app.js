@@ -7,6 +7,8 @@ const morgan = require("morgan");
 
 const contactRoutes = require("./routes/contact");
 const enquiryRoutes = require("./routes/enquiry");
+const authRoutes = require("./routes/auth.route");
+const { createInitialAdmin } = require("./utils/createInitialAdmin");
 
 dotenv.config();
 
@@ -33,17 +35,15 @@ app.use(express.json());
 const allowedOrigins = [
   "https://expressocoffee.com.np",
   "https://espresso-organic.vercel.app/",
+  "http://localhost:3000",
 ];
+
+createInitialAdmin();
 
 app.use(
   cors({
-    origin: (origin, callback) => {
-      // allow requests with no origin (like mobile apps or curl)
-      if (!origin) return callback(null, true);
-      if (allowedOrigins.includes(origin)) return callback(null, true);
-      return callback(new Error("Not allowed by CORS"));
-    },
-    credentials: true,
+    origin: "*",
+    credentials: false,
   })
 );
 
@@ -52,6 +52,7 @@ app.use(
 // ---------------------
 app.use("/api/contact", contactRoutes);
 app.use("/api/enquiry", enquiryRoutes);
+app.use("/api/auth", authRoutes);
 
 // Root route
 app.get("/", (req, res) => {

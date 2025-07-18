@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import ".././globals.css";
 import { Lato } from "next/font/google";
 import localFont from "next/font/local";
-import Navbar from "@/components/Navbar/Navbar";
-import Footer from "@/components/Footer/Footer";
+import AdminNavbar from "@/components/Navbar/AdminNavbar";
 
 // Load Google Font
 const lato = Lato({
@@ -15,7 +14,7 @@ const lato = Lato({
 
 // Load Reporter Font (local)
 const reporter = localFont({
-  src: "../public/font/reporter/reportr.ttf",
+  src: "../../public/font/reporter/reportr.ttf",
   variable: "--font-reporter",
   display: "swap",
 });
@@ -33,9 +32,8 @@ export default function RootLayout({
       <body
         className={`${lato.variable} ${reporter.variable} antialiased bg-[color:var(--color-background)] text-[color:var(--color-foreground)]`}
       >
-        <Navbar />
+        <AdminNavbar />
         {children}
-        <Footer />
       </body>
     </html>
   );

@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const { Resend } = require("resend");
-const Enquiry = require("../models/enquiry"); // ✅ Mongoose model
+const Enquiry = require("../models/enquiry");
 require("dotenv").config();
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -65,6 +65,16 @@ router.post("/", async (req, res) => {
     res
       .status(500)
       .json({ message: "Something went wrong. Please try again later." });
+  }
+});
+
+router.get("/", async (req, res) => {
+  try {
+    const enquiries = await Enquiry.find().sort({ createdAt: -1 });
+    return res.status(200).json(enquiries);
+  } catch (error) {
+    console.error("❌ Error fetching enquiries:", error);
+    return res.status(500).json({ message: "Failed to fetch enquiries." });
   }
 });
 
