@@ -6,6 +6,7 @@ import FarmVisitSection from "@/components/Home/FarmVisitSection";
 import TestimonialsSection from "@/components/Home/CommunityTestimonials";
 import BlogPreview from "@/components/Home/BlogPreview";
 import FooterCTA from "@/components/Home/HomeCTA";
+import BlogSection from "@/components/Blogs/BlogSection";
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       {/* <section className="py-20 px-4 md:px-8 bg-[#FFFAF3]">
         <BlogPreview />
       </section> */}
+      {/* <BlogSection /> */}
 
       {/* Final Call To Action */}
       <section className="py-20 px-4 md:px-8">
