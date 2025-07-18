@@ -67,28 +67,24 @@ export default function ContactPage() {
           <div className="space-y-6">
             <h3 className="text-xl font-semibold">Our Branches</h3>
 
-            <div>
-              <p className="font-medium">Pokhara</p>
-              <p className="text-sm">Lakeside Rd, Pokhara</p>
+            <div className="space-y-1">
+              <p className="font-bold">Urlabari, Morang</p>
+              <p className="text-sm">
+                Madhulalla road opposite of shakya pharmacy
+              </p>
               <p className="text-sm flex items-center gap-2">
                 <Phone size={16} />{" "}
                 <Link href="tel:+9779800000001">+977 9800000001</Link>
               </p>
             </div>
-            <div>
-              <p className="font-medium">Butwal</p>
-              <p className="text-sm">Traffic Chowk, Butwal</p>
+            <div className="space-y-1">
+              <p className="font-bold">Itahari, Sunsari</p>
+              <p className="text-sm">
+                Biratnagar line opposite of chintan chautari
+              </p>
               <p className="text-sm flex items-center gap-2 ">
                 <Phone size={16} />{" "}
                 <Link href="tel:+9779800000002">+977 9800000002</Link>
-              </p>
-            </div>
-            <div>
-              <p className="font-medium">Chitwan</p>
-              <p className="text-sm">Pulchowk, Bharatpur</p>
-              <p className="text-sm flex items-center gap-2">
-                <Phone size={16} />{" "}
-                <Link href="tel:+9779800000003">+977 9800000003</Link>
               </p>
             </div>
           </div>
