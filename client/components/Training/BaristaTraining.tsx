@@ -36,7 +36,10 @@ type Course = {
   category: string;
 };
 
-const courses = coursesData as Course[];
+const courses: Course[] = coursesData.map((course) => ({
+  ...course,
+  price: Number(course.price),
+}));
 
 export default function BaristaTraining() {
   const baristaCourses = courses.filter(
@@ -74,43 +77,42 @@ export default function BaristaTraining() {
           >
             {baristaCourses.map((course, index) => (
               <SwiperSlide key={index}>
-                <div className="border border-[#FFD6C2] p-4 rounded-md shadow-sm bg-white h-full flex flex-col justify-between">
-                  {/* Badges */}
-                  <div className="flex gap-2 mb-2">
-                    <span className="flex items-center gap-1 text-xs text-[#CB5B2C] font-medium border border-[#FFD6C2] rounded-full px-2 py-1">
-                      <Coffee size={14} /> Organic
-                    </span>
-                    <span className="flex items-center gap-1 text-xs text-[#CB5B2C] font-medium border border-[#FFD6C2] rounded-full px-2 py-1">
-                      <BookOpen size={14} /> Hands-on Training
-                    </span>
-                  </div>
+                <Link href={`/training/${course.slug}`}>
+                  <div className="border border-[#FFD6C2] p-4 rounded-md shadow-sm bg-white h-full flex flex-col justify-between">
+                    {/* Badges */}
+                    <div className="flex gap-2 mb-2">
+                      <span className="flex items-center gap-1 text-xs text-[#CB5B2C] font-medium border border-[#FFD6C2] rounded-full px-2 py-1">
+                        <Coffee size={14} /> Organic
+                      </span>
+                      <span className="flex items-center gap-1 text-xs text-[#CB5B2C] font-medium border border-[#FFD6C2] rounded-full px-2 py-1">
+                        <BookOpen size={14} /> Hands-on Training
+                      </span>
+                    </div>
 
-                  {/* Image */}
-                  <div className="relative h-[160px] rounded-md overflow-hidden mb-4">
-                    <Image
-                      src={course.image}
-                      alt={course.title}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
+                    {/* Image */}
+                    <div className="relative h-36 md:h-48 rounded-md overflow-hidden mb-4">
+                      <Image
+                        src={course.image}
+                        alt={course.title}
+                        fill
+                        className="object-cover object-center "
+                      />
+                    </div>
 
-                  {/* Content */}
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-base font-semibold text-[#2B1E17]">
-                      {course.title}
-                    </h3>
-                    <p className="text-sm text-[#6F5A48]">
-                      {course.description}
-                    </p>
-                    <Link
-                      href={`/training/${course.slug}`}
-                      className="mt-2 text-sm text-[#CB5B2C] font-medium inline-flex items-center hover:underline"
-                    >
-                      Learn More <span className="ml-1">→</span>
-                    </Link>
+                    {/* Content */}
+                    <div className="flex flex-col gap-2">
+                      <h3 className="text-base font-semibold text-[#2B1E17]">
+                        {course.title}
+                      </h3>
+                      <p className="text-sm text-[#6F5A48]">
+                        {course.description}
+                      </p>
+                      <span className="mt-2 text-sm text-[#CB5B2C] font-medium inline-flex items-center hover:underline">
+                        Learn More <span className="ml-1">→</span>
+                      </span>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </SwiperSlide>
             ))}
           </Swiper>

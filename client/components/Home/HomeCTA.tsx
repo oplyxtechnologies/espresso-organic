@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 export default function FooterCTA() {
   return (
@@ -9,9 +10,11 @@ export default function FooterCTA() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
         {/* Illustration or Image (Optional) */}
         <div className="flex justify-center">
-          <img
+          <Image
             src="/coffee-chat.svg" // Replace with your actual asset
             alt="Coffee Chat Illustration"
+            width={400}
+            height={400}
             className="max-w-xs md:max-w-sm"
           />
         </div>

@@ -9,22 +9,22 @@ const blogPosts = [
   {
     title: "Minimalist Brewing: The Beauty of Simplicity",
     excerpt:
-      "Discover how less gear and more attention can elevate your espresso game.",
-    image: "/barista.jpg",
+      "Minimalist coffee brewing is more than a method—it's a mindful approach to making coffee that emphasizes clarity, connection, and control.",
+    image: "/blog/minimalist-brewing.jpg",
     slug: "/blog/minimalist-brewing",
   },
   {
     title: "Why Organic Coffee Matters",
     excerpt:
-      "Learn how organic beans impact your health, the planet, and the people who grow them.",
-    image: "/barista.jpg",
+      "Organic coffee isn’t just a trend—it’s a commitment to healthier choices, cleaner farming, and better futures for farming communities.",
+    image: "/blog/organic-coffee.jpg",
     slug: "/blog/organic-coffee-matters",
   },
   {
     title: "5 Barista Skills You Only Learn On the Job",
     excerpt:
-      "From workflow rhythm to pressure control, here’s what real café training teaches you.",
-    image: "/barista.jpg",
+      "Barista training gives you the foundation—but the real magic happens on the job. These 5 skills are the difference between good and great baristas.",
+    image: "/blog/barista-skills.jpg",
     slug: "/blog/barista-skills",
   },
 ];
@@ -86,10 +86,10 @@ export default function BlogPreview() {
           className="mt-10 text-center"
         >
           <Link
-            href="/cafe"
+            href="/blog"
             className="bg-[#E32B2B] text-white text-sm font-semibold px-6 py-3 rounded-sm hover:bg-[#b42323] transition"
           >
-            Visit Our Café
+            View More Blogs
           </Link>
         </motion.div>
       </div>

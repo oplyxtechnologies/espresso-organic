@@ -17,25 +17,25 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Ravi K.",
+    name: "Samuyal Magar",
     location: "Kathmandu",
-    text: "Working with Oplyx was a game-changer. They delivered a stunning website and branding that truly reflects our vision.",
+    text: "Best place for learning and boosting your self confidence while learning barista skills. Recommender 100%",
     rating: 5,
-    image: "/testimonials/ravi.png",
+    image: "/testimonials/samuyal.png",
   },
   {
-    name: "Elena M.",
-    location: "Berlin",
+    name: "Storz Nepal",
+    location: "Kathmandu",
     text: "Their UI/UX design transformed our app’s experience. Great communication and flawless delivery.",
     rating: 5,
-    image: "/testimonials/elena.png",
+    image: "/testimonials/Storz.png",
   },
   {
-    name: "James T.",
-    location: "New York",
-    text: "We needed a fast MVP. Oplyx delivered early and exceeded expectations.",
+    name: "Yushan Khadka",
+    location: "Kathmadnu",
+    text: "This is the best espresso organic coffee house. Please you can visit for counselling and do training. Location is Thapaghaun New Baneshowr",
     rating: 5,
-    image: "/testimonials/james.png",
+    image: "/testimonials/Yushan.png",
   },
 ];
 

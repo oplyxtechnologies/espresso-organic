@@ -5,8 +5,9 @@
     "author": "Espresso Organic Coffee House",
     "description": "Discover the techniques, tools, and mindset behind crafting the perfect espresso. Learn how mastering this small but mighty cup can elevate your entire coffee experience.",
     "date": "2025-07-15",
+    "category": "Training",
     "tags": ["Espresso, Barista Tips, Coffee Culture, Brewing, Training"],
-    "heroImage": "/blog/why-oplyx.jpg",
+    "heroImage": "/blog/mastering-espresso.jpg",
     "excerpt": "Espresso may be small in size, but it carries a world of complexity. In this guide, we explore what it takes to master the art of espresso—from bean selection to extraction and presentation.",
     "content": [
       "Espresso is the heart and soul of coffee culture. Despite its small size, a well-crafted shot can deliver a powerful sensory experience—rich aromas, bold flavor, and a lingering crema that tells the story of craftsmanship. Mastering the art of espresso requires a deep appreciation for detail and consistency, beginning with the selection of high-quality, freshly roasted beans.",
@@ -21,10 +22,11 @@
     "author": "Espresso Organic Coffee House",
     "description": "A deep dive into the health and sustainability advantages of organic beans.",
     "date": "2025-07-15",
+    "category": "Training",
     "tags": [
       "Organic Coffee, Health, Sustainability, Eco-Friendly Farming, Natural Beans"
     ],
-    "heroImage": "/blog/why-oplyx.jpg",
+    "heroImage": "/blog/organic-beans.jpg",
     "excerpt": "Organic coffee beans aren't just a trend—they're a commitment to health, taste, and the environment. This post explores why choosing organic beans is a step toward a better future for coffee lovers and the planet.",
     "content": [
       "Coffee is more than a daily ritual—it's a connection to the earth, the farmers, and the communities who cultivate each bean. Choosing organic coffee beans isn’t simply about avoiding chemicals. It’s a conscious decision to support a farming method that respects nature, protects biodiversity, and produces a cleaner, richer cup of coffee. When beans are grown without synthetic pesticides or fertilizers, the soil remains healthier, and the impact on nearby ecosystems is significantly reduced.",
@@ -39,10 +41,11 @@
     "author": "Espresso Organic Coffee House",
     "description": "Learn how to create silky smooth microfoam for cappuccinos and lattes.",
     "date": "2025-07-15",
+    "category": "Training",
     "tags": [
       "Barista Skills, Milk Frothing, Latte Art, Coffee Training, Microfoam"
     ],
-    "heroImage": "/blog/why-oplyx.jpg",
+    "heroImage": "/blog/froth-milk-guide.jpg",
     "excerpt": "Perfectly frothed milk is the secret behind velvety cappuccinos and creamy lattes. This guide walks you through the tools, techniques, and tips to froth like a true barista.",
     "content": [
       "Frothing milk may seem like a simple step, but for a barista, it’s an essential art form. The goal is to create microfoam—silky, textured milk that enhances the taste and feel of your espresso-based drinks. Whether you’re making a creamy latte or a foamy cappuccino, understanding how to froth milk properly can elevate your coffee game dramatically.",
@@ -57,16 +60,87 @@
     "author": "Espresso Organic Coffee House",
     "description": "How sustainable packaging is helping reduce waste in the coffee industry.",
     "date": "2025-07-15",
+    "category": "Sustainability",
     "tags": [
       "Eco-Friendly, Sustainable Packaging, Coffee Industry, Waste Reduction, Compostable Materials"
     ],
-    "heroImage": "/blog/why-oplyx.jpg",
+    "heroImage": "/blog/compostable-packaging.jpg",
     "excerpt": "Compostable packaging is changing the game for coffee businesses aiming to reduce their environmental impact. Here's how this innovation supports sustainability across the industry.",
     "content": [
       "The coffee industry has long struggled with the environmental impact of packaging—especially single-use plastics and foil-lined bags that end up in landfills. But a wave of change is brewing with the rise of compostable packaging. Designed to break down naturally and return to the earth, compostable materials offer a much-needed solution to the waste problem without compromising freshness or design.",
       "Unlike traditional packaging, compostable coffee bags and cups are made from plant-based materials like cornstarch, PLA (polylactic acid), and kraft paper. When disposed of correctly, these materials decompose into organic matter, leaving behind no toxins or microplastics. This means your daily cup of coffee doesn’t have to come at the cost of long-term environmental damage.",
       "Beyond its biodegradable benefits, compostable packaging also reflects a brand’s commitment to sustainability. Consumers are increasingly drawn to eco-conscious businesses that align with their values. By switching to compostable solutions, coffee houses not only reduce their carbon footprint but also build stronger trust and loyalty with their customers.",
       "However, the transition isn’t without challenges—cost, supply chain access, and proper disposal infrastructure all play a role. But as awareness grows and demand rises, compostable packaging is becoming more accessible and affordable. For coffee businesses serious about sustainability, it’s more than a trend—it’s the future of responsible brewing and mindful branding."
+    ]
+  },
+  {
+    "slug": "barista-skills",
+    "title": "5 Barista Skills You Only Learn On the Job",
+    "author": "Espresso Organic Coffee House",
+    "description": "Discover the real-world barista skills that only hands-on experience behind the counter can teach.",
+    "date": "2025-07-19",
+    "category": "Training",
+    "tags": [
+      "Barista Skills",
+      "Coffee Career",
+      "Customer Service",
+      "Hands-On Training",
+      "Café Experience"
+    ],
+    "heroImage": "/blog/barista-skills.jpg",
+    "excerpt": "Barista training gives you the foundation—but the real magic happens on the job. These 5 skills are the difference between good and great baristas.",
+    "content": [
+      "No matter how comprehensive your training is, nothing compares to the fast-paced, real-world learning that happens behind the café counter. Being a barista is about more than just pulling shots—it’s about adapting, multitasking, and understanding people. Some lessons only sink in through repetition, observation, and direct interaction with customers and coworkers.",
+      "1. Speed with Precision: In a bustling café, speed matters—but not at the cost of quality. Learning how to stay calm, consistent, and quick under pressure is something you can only develop with time on the floor. You begin to anticipate orders, streamline your workflow, and minimize wasted motion.",
+      "2. Reading Customers: Not every guest wants the same level of interaction. Some love a chat, others just need caffeine. Experienced baristas learn to read body language, tone, and pacing to tailor their service. This people skill goes beyond hospitality—it’s emotional intelligence in action.",
+      "3. Problem Solving Under Pressure: Machines break. Orders get mixed up. A rush hits out of nowhere. These situations test your ability to troubleshoot, improvise, and keep things moving with a smile. No manual can prepare you for these moments—only experience can.",
+      "4. Efficiency in Cleaning & Resetting: Keeping your station tidy while working at full speed is a true barista superpower. From wiping steam wands to reloading grinders, these micro-movements are learned only when your station becomes an extension of your body. It’s what separates rookies from pros."
+    ]
+  },
+  {
+    "slug": "organic-coffee-matters",
+    "title": "Why Organic Coffee Matters",
+    "author": "Espresso Organic Coffee House",
+    "description": "Discover the benefits of organic coffee—for your health, the planet, and the communities behind every bean.",
+    "date": "2025-07-19",
+    "category": "Sustainability",
+    "tags": [
+      "Organic Coffee",
+      "Sustainable Farming",
+      "Health Benefits",
+      "Chemical-Free",
+      "Fair Trade"
+    ],
+    "heroImage": "/blog/organic-coffee.jpg",
+    "excerpt": "Organic coffee isn’t just a trend—it’s a commitment to healthier choices, cleaner farming, and better futures for farming communities. Here’s why it deserves your attention.",
+    "content": [
+      "Organic coffee is grown without the use of synthetic fertilizers, pesticides, or GMOs, making it a healthier option for both consumers and farmers. This chemical-free approach preserves the purity of the beans and ensures that no harmful residues make it into your morning cup. For coffee lovers who value clean, natural products, organic coffee offers peace of mind with every sip.",
+      "The benefits go far beyond personal health. Organic farming methods help protect soil health, conserve water, and reduce pollution in surrounding ecosystems. These practices nurture biodiversity and support a more resilient agricultural system—something our planet desperately needs in the face of climate change.",
+      "When you choose organic coffee, you're also supporting fairer and more ethical supply chains. Many organic farms are small, family-owned operations that follow sustainable practices and participate in Fair Trade certification. Your purchase helps these communities access better wages, education, and long-term stability.",
+      "In a time when conscious consumption is more important than ever, organic coffee stands as a symbol of mindful living. It’s not just about flavor—though organic beans are often richer in taste—it’s about the positive ripple effects your daily brew can create. From farm to cup, organic coffee matters more than you think."
+    ]
+  },
+  {
+    "slug": "minimalist-brewing",
+    "title": "Minimalist Brewing: The Beauty of Simplicity",
+    "author": "Espresso Organic Coffee House",
+    "description": "How minimalist coffee brewing is redefining quality and experience through intentional simplicity.",
+    "date": "2025-07-19",
+    "category": "Lifestyle",
+    "tags": [
+      "Minimalist Brewing",
+      "Slow Coffee",
+      "Manual Brewing Methods",
+      "Coffee Rituals",
+      "Mindful Living"
+    ],
+    "heroImage": "/blog/minimalist-brewing.jpg",
+    "excerpt": "Minimalist coffee brewing is more than a method—it's a mindful approach to making coffee that emphasizes clarity, connection, and control. Here's why going simple brings out the best in your cup.",
+    "content": [
+      "In a world driven by speed and complexity, minimalist brewing offers a refreshing return to the roots of coffee making. It's about stripping away the clutter—digital machines, automated systems, over-complicated gear—and focusing on the essentials: water, coffee, and intentional technique. This slow, deliberate approach not only enhances flavor but also creates a more meditative and meaningful brewing experience.",
+      "Tools like the French press, pour-over, AeroPress, and moka pot represent the heart of minimalist brewing. These manual methods allow the brewer to control every variable, from grind size to pour rate. By reducing reliance on electricity and automation, these tools foster a deeper understanding of coffee extraction and highlight the natural characteristics of the beans.",
+      "Minimalist brewing aligns perfectly with mindful and sustainable lifestyles. It requires fewer resources, produces less waste, and encourages conscious consumption. Brewing with simplicity not only reduces your environmental impact but also invites a daily pause—a moment to be present with your ritual and appreciate the art of the process.",
+      "Whether you're brewing at home or curating a slow coffee experience in your café, the beauty of minimalist brewing lies in its purity. With less gear and more care, every cup becomes a quiet celebration of craftsmanship, clarity, and the timeless joy of good coffee."
     ]
   }
 ]

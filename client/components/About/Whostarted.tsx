@@ -1,4 +1,5 @@
 // components/WhoStarted.tsx
+import Image from "next/image";
 
 export default function WhoStarted() {
   return (
@@ -26,8 +27,10 @@ export default function WhoStarted() {
 
         {/* Image */}
         <div className="md:w-1/2 p-4 flex justify-center">
-          <img
+          <Image
             src="/images/chairman.jpeg" // Replace with your actual path
+            width={400}
+            height={400}
             alt="Man Bahadur Shrestha, Chairman of Espresso Organic"
             className="rounded-lg  max-w-sm md:max-w-md"
           />

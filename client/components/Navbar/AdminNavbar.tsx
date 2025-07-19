@@ -15,6 +15,7 @@ import {
 import { useRouter, usePathname } from "next/navigation";
 import Cookies from "js-cookie";
 
+import Image from "next/image";
 // --- Sub-components (Dropdown, Badge, Avatar) remain the same ---
 
 interface DropdownProps {
@@ -95,10 +96,11 @@ function Avatar({ src, alt, fallback, size = "md" }: AvatarProps) {
       className={`${sizeClasses[size]} rounded-full bg-gray-300 flex items-center justify-center overflow-hidden`}
     >
       {src && !imageError ? (
-        <img
+        <Image
           src={src || "/placeholder.svg"}
-          alt={alt}
-          className="h-full w-full object-cover"
+          alt="Espresso Logo"
+          fill
+          className="object-contain"
           onError={() => setImageError(true)}
         />
       ) : (
@@ -152,7 +154,7 @@ export default function AdminNavbar() {
           <div className="flex items-center">
             {/* Logo */}
             <div className="flex-shrink-0 flex items-center">
-              <img
+              <Image
                 src={
                   "https://espresso-organic.vercel.app/logo/espresso-brown.svg"
                 }

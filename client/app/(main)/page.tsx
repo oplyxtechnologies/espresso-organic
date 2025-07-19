@@ -14,14 +14,14 @@ export default function Home() {
       {/* Hero Section */}
       <HomeHero />
 
-      {/* Our Journey Timeline */}
-      <section className=" px-4 md:px-8">
-        <OurJourney />
-      </section>
-
       {/* Barista Courses Slider */}
       <section className=" px-4 md:px-8 bg-[#FFFAF3]">
         <BaristatrainingSlider />
+      </section>
+
+      {/* Our Journey Timeline */}
+      <section className=" px-4 md:px-8">
+        <OurJourney />
       </section>
 
       {/* Café Showcase */}
@@ -40,10 +40,9 @@ export default function Home() {
       </section>
 
       {/* Blog Preview */}
-      {/* <section className=" px-4 md:px-8 bg-[#FFFAF3]">
+      <section className=" px-4 md:px-8 bg-[#FFFAF3]">
         <BlogPreview />
-      </section> */}
-      {/* <BlogSection /> */}
+      </section>
 
       {/* Final Call To Action */}
       <section className=" px-4 md:px-8">

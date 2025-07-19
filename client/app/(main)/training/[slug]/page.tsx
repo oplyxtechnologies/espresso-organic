@@ -62,12 +62,12 @@ export default async function Page({ params }: PageProps) {
             </span>
           </div>
 
-          <div className="relative w-full h-64 md:h-96 rounded-lg overflow-hidden mb-6">
+          <div className="relative w-full h-64 md:h-80 rounded-lg overflow-hidden mb-6">
             <Image
               src={course.image}
               alt={course.title}
               fill
-              className="object-cover"
+              className="object-cover object-center"
             />
           </div>
 
@@ -100,7 +100,7 @@ export default async function Page({ params }: PageProps) {
         {/* RIGHT SIDEBAR */}
         <div className="relative">
           <div className="md:sticky  md:top-24 border border-white/20 p-6 rounded-lg  bg-[#FFF3E8] backdrop-blur-sm">
-            <h3 className="text-2xl font-bold mb-4">Rs. {course.price}</h3>
+            <h3 className="text-xl font-bold mb-4">{course.price}</h3>
             <Link href="/training/courseenquiry">
               <button className="w-full py-3 cursor-pointer hover:bg-[#2B1E17] text-white    font-semibold rounded bg-[#4d362a] hover:text-white transition mb-6">
                 Enroll Now

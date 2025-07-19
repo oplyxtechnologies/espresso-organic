@@ -55,12 +55,14 @@ export default function Navbar() {
           <nav className="max-w-screen-xl mx-auto px-4 py-4 flex items-center justify-between">
             {/* Logo */}
             <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/logo/espresso-brown.svg"
-                alt="Espresso Logo"
-                width={70}
-                height={70}
-              />
+              <div className="relative w-20 h-20">
+                <Image
+                  src="/logo/espresso-brown.svg"
+                  alt="Espresso Logo"
+                  fill
+                  className="object-contain"
+                />
+              </div>
             </Link>
 
             {/* Desktop Nav */}
@@ -112,12 +114,14 @@ export default function Navbar() {
                 >
                   <div className="flex items-center justify-between px-4 py-4">
                     <Link href="/" className="flex items-center space-x-2">
-                      <Image
-                        src="/logo/espresso-brown.svg"
-                        alt="Espresso Logo"
-                        width={50}
-                        height={50}
-                      />
+                      <div className="relative ">
+                        <Image
+                          src="/logo/espresso-brown.svg"
+                          alt="Espresso Logo"
+                          fill
+                          className="object-contain"
+                        />
+                      </div>
                     </Link>
                     <button onClick={() => setMenuOpen(false)}>
                       <X className="w-6 h-6 text-black" />
