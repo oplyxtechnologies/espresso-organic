@@ -32,9 +32,9 @@ const courseInquiryData = [
 const ModernInquiriesDashboard = () => {
   return (
     <div className=" text-white p-8 font-sans">
-      <h1 className="text-4xl font-bold mb-10 text-[#000] ">
+      <h2 className="text-4xl font-bold mb-10 text-[#000] ">
         Inquiry Insights
-      </h1>
+      </h2>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Contact Inquiry Line Chart */}

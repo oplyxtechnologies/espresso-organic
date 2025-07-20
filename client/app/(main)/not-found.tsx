@@ -16,9 +16,9 @@ export default function NotFound() {
         className="mb-6"
       />
 
-      <h1 className="text-4xl md:text-5xl font-bold text-[#2B1E17] mb-4">
+      <h2 className="text-4xl md:text-5xl font-bold text-[#2B1E17] mb-4">
         Oops! Page Not Found
-      </h1>
+      </h2>
       <p className="text-[#6F5A48] text-lg mb-6 max-w-xl">
         We couldn&apos;t find the page you were looking for. It might have been
         moved or deleted — or maybe it&apos;s just brewing somewhere else ☕️

@@ -25,9 +25,9 @@ export default function ContactPage() {
         />
         <div className="absolute inset-0 bg-black/50 backdrop-blur-sm" />
         <div className="relative z-10 text-center px-6">
-          <h1 className="text-4xl md:text-6xl font-reporter mb-4">
+          <h2 className="text-4xl md:text-6xl font-reporter mb-4">
             Let's Brew a Connection ☕
-          </h1>
+          </h2>
           <p className="text-white/90 text-base sm:text-lg">
             Questions about our café or training programs? We're here to help!
           </p>

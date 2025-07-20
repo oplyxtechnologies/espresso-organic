@@ -36,9 +36,9 @@ export default async function BlogPage({ params }: SlugProps) {
     <main className=" text-black py-16 px-6 md:px-12">
       <div className="max-w-7xl mt-20 mx-auto grid md:grid-cols-[2fr_1fr] gap-12">
         <article>
-          <h1 className="text-4xl md:text-5xl font-reporter mb-4">
+          <h2 className="text-4xl md:text-5xl font-reporter mb-4">
             {blog.title}
-          </h1>
+          </h2>
           <p className="text-black/70 mb-2">
             By {blog.author} ·{" "}
             {new Date(blog.date).toLocaleDateString("en-US", {

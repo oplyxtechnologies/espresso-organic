@@ -15,9 +15,9 @@ export default function BaristaHero() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl md:text-5xl font-reporter text-[#2B1E17] leading-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-reporter text-[#2B1E17] leading-tight mb-6">
             Craft Your Journey as a Skilled Barista
-          </h1>
+          </h2>
           <p className="text-[#6F5A48] text-lg mb-8 max-w-xl">
             Learn the art of coffee from bean to brew. Our hands-on training is
             designed for aspiring baristas who want to master espresso

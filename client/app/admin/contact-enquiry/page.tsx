@@ -34,9 +34,9 @@ const Page = () => {
 
   return (
     <div className="min-h-screen text-white p-8 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-[#E81A02]">
+      <h2 className="text-3xl font-bold mb-6 text-[#E81A02]">
         Contact Enquiries
-      </h1>
+      </h2>
 
       <div className="grid gap-4">
         {mockEnquiries.map((enquiry, index) => (

@@ -7,7 +7,7 @@ export default function Page() {
     <div className="min-h-screen  max-w-7xl mx-auto">
       <main className="container mx-auto py-8 px-4">
         <div className=" rounded-lg  py-6">
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">Dashboard</h1>
+          <h2 className="text-3xl font-bold text-gray-900 mb-4">Dashboard</h2>
           <p className="text-gray-600 mb-6">Welcome Admin!</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

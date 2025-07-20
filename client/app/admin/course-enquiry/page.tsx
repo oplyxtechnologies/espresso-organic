@@ -37,9 +37,9 @@ const Page = () => {
 
   return (
     <div className="min-h-screen text-white p-8 max-w-7xl mx-auto">
-      <h1 className="text-3xl font-bold mb-6 text-[#E81A02]">
+      <h2 className="text-3xl font-bold mb-6 text-[#E81A02]">
         Course Enquiries
-      </h1>
+      </h2>
 
       {loading ? (
         <p className="text-gray-400">Loading enquiries...</p>

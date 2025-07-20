@@ -45,9 +45,9 @@ export default async function Page({ params }: PageProps) {
       <div className="max-w-6xl mx-auto grid md:grid-cols-[2fr_1fr] gap-12">
         {/* LEFT */}
         <div>
-          <h1 className="text-3xl md:text-4xl font-reporter text-[#2B1E17] mb-2">
+          <h2 className="text-3xl md:text-4xl font-reporter text-[#2B1E17] mb-2">
             {course.title}
-          </h1>
+          </h2>
           <p className="text-[#6F5A48] mb-4">{course.description}</p>
 
           <div className="flex flex-wrap gap-4 text-sm text-[#CB5B2C] mb-6 font-medium">

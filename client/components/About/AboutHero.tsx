@@ -13,9 +13,9 @@ export default function AboutHero() {
 
       {/* Content */}
       <div className="relative z-10 text-center max-w-4xl mx-auto">
-        <h1 className="text-4xl md:text-5xl font-reporter text-white mb-6">
+        <h2 className="text-4xl md:text-5xl font-reporter text-white mb-6">
           Our Story Begins with a Brew
-        </h1>
+        </h2>
         <p className="text-[#F3EDE9] max-w-2xl mx-auto text-lg md:text-xl mb-8">
           At Espresso Organic, coffee is more than a drink—it&apos;s a ritual of
           passion, sustainability, and community. Every bean tells a story of

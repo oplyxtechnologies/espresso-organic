@@ -59,7 +59,7 @@ const Page = () => {
             src={"https://espresso-organic.vercel.app/logo/espresso-brown.svg"}
             alt="Espresso Organic Logo"
           />
-          <h1 className="text-3xl font-bold text-gray-900">Welcome</h1>
+          <h2 className="text-3xl font-bold text-gray-900">Welcome</h2>
           <p className="mt-2 text-sm text-gray-600">
             Please sign in to continue
           </p>

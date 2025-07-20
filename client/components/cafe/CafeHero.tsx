@@ -15,9 +15,9 @@ export default function CafeHero() {
           transition={{ duration: 0.7 }}
           viewport={{ once: true }}
         >
-          <h1 className="text-4xl md:text-5xl font-reporter text-[#2B1E17] leading-tight mb-6">
+          <h2 className="text-4xl md:text-5xl font-reporter text-[#2B1E17] leading-tight mb-6">
             Welcome to Our Organic Café
-          </h1>
+          </h2>
           <p className="text-[#6F5A48] text-lg mb-8 max-w-xl">
             A cozy space where sustainability, community, and craft coffee come
             together. Sip slow, stay grounded, and enjoy the aroma of something
