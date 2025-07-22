@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import ".././globals.css";
-import { lato } from "next/font/google";
+import { Lato } from "next/font/google";
 import localFont from "next/font/local";
 
-const lato = lato({
+const lato = Lato({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-lato",
