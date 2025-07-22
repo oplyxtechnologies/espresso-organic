@@ -2,6 +2,7 @@
 
 import type { Metadata } from "next";
 import { Lato } from "next/font/google";
+
 import localFont from "next/font/local";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
