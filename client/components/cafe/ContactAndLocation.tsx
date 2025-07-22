@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
+import Link from "next/link";
 
 export default function ContactAndLocationSection() {
   return (
@@ -21,8 +22,8 @@ export default function ContactAndLocationSection() {
             Visit Us
           </h2>
           <p className="text-[#6F5A48] mb-8">
-            We’re open every day, serving up organic brews and fresh bakes in
-            the heart of the city.
+            We&apos;re open every day, serving up organic brews and fresh bakes
+            in the heart of the city.
           </p>
 
           <div className="space-y-4 text-[#3C2E29] text-sm">
@@ -36,8 +37,18 @@ export default function ContactAndLocationSection() {
             </div>
 
             <div className="flex items-center gap-3">
-              <Phone className="w-5 h-5 text-[#E32B2B]" />
-              <p>+977 9818272352</p>
+              <p className="flex items-center gap-2 text-sm">
+                <Phone size={16} />
+                <Link href="tel:+977123456789">+977 9818272352</Link>
+              </p>
+              <p className="flex items-center gap-2 text-sm">
+                <Phone size={16} />
+                <Link href="tel:+977123456789">+977 9849361711</Link>
+              </p>
+              <p className="flex items-center gap-2 text-sm">
+                <Phone size={16} />
+                <Link href="tel:+977123456789">+977 984166241</Link>
+              </p>
             </div>
 
             <div className="flex items-center gap-3">

@@ -4,18 +4,18 @@ import Image from "next/image";
 
 const teamMembers = [
   {
+    name: "Man bahadur Shrestha",
+    role: "Founder/ Chairman",
+    image: "/images/chairman.jpeg",
+  },
+  {
     name: "Manish Shrestha",
-    role: "Founder",
+    role: "Café and School Manager",
     image: "/images/barista.jpg",
   },
   {
-    name: "Priyanka Karki",
+    name: "Dalai Tamang",
     role: "Head Trainer",
-    image: "/images/priyanka.jpg",
-  },
-  {
-    name: "Dalai Lama",
-    role: "Café Manager",
     image: "/images/dalailama.jpg",
   },
 ];

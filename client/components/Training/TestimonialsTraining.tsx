@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
+import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/pagination";
 
@@ -16,35 +17,41 @@ interface Testimonial {
 
 const testimonials: Testimonial[] = [
   {
-    name: "Ravi K.",
+    name: "Samuyal Magar",
     location: "Kathmandu",
-    text: "Working with Oplyx was a game-changer. They delivered a stunning website and branding that truly reflects our vision.",
+    text: "Best place for learning and boosting your self confidence while learning barista skills. Recommender 100%",
     rating: 5,
-    image: "/testimonials/ravi.png",
+    image: "/testimonials/samuyal.png",
   },
   {
-    name: "Elena M.",
-    location: "Berlin",
+    name: "Storz Nepal",
+    location: "Kathmandu",
     text: "Their UI/UX design transformed our app’s experience. Great communication and flawless delivery.",
     rating: 5,
-    image: "/testimonials/elena.png",
+    image: "/testimonials/Storz.png",
   },
   {
-    name: "James T.",
-    location: "New York",
-    text: "We needed a fast MVP. Oplyx delivered early and exceeded expectations.",
+    name: "Yushan Khadka",
+    location: "Kathmadnu",
+    text: "This is the best espresso organic coffee house. Please you can visit for counselling and do training. Location is Thapaghaun New Baneshowr",
     rating: 5,
-    image: "/testimonials/james.png",
+    image: "/testimonials/Yushan.png",
   },
 ];
 
-const TestimonialsTraining = () => {
+const TestimonialsSection = () => {
   return (
     <section className="text-black py-24 px-4 sm:px-6 md:px-12 overflow-hidden w-full">
       <div className="max-w-7xl mx-auto w-full text-center">
-        <h2 className="text-3xl md:text-4xl font-reporter font mb-12">
+        <motion.h2
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+          className="text-3xl md:text-4xl font-reporter font mb-12"
+        >
           What Our Students Say
-        </h2>
+        </motion.h2>
 
         <Swiper
           modules={[Pagination, Autoplay]}
@@ -61,7 +68,13 @@ const TestimonialsTraining = () => {
         >
           {testimonials.map((testimonial, index) => (
             <SwiperSlide key={index}>
-              <div className="max-w-md mx-auto mb-10 border border-white/10 rounded-lg p-6 bg-[color:var(--color-secondary)] transition h-full flex flex-col justify-between">
+              <motion.div
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="max-w-md mx-auto mb-10 border border-white/10 rounded-lg p-6 bg-[color:var(--color-secondary)] transition h-full flex flex-col justify-between"
+              >
                 <div className="flex justify-center mb-4">
                   <Image
                     loading="lazy"
@@ -79,7 +92,7 @@ const TestimonialsTraining = () => {
                   “{testimonial.text}”
                 </p>
                 <p className="text-sm text-black">{testimonial.location}</p>
-              </div>
+              </motion.div>
             </SwiperSlide>
           ))}
         </Swiper>
@@ -100,4 +113,4 @@ const TestimonialsTraining = () => {
   );
 };
 
-export default TestimonialsTraining;
+export default TestimonialsSection;

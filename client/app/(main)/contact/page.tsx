@@ -56,6 +56,14 @@ export default function ContactPage() {
               <Link href="tel:+977123456789">+977 9818272352</Link>
             </p>
             <p className="flex items-center gap-2 text-sm">
+              <Phone size={16} />
+              <Link href="tel:+977123456789">+977 9849361711</Link>
+            </p>
+            <p className="flex items-center gap-2 text-sm">
+              <Phone size={16} />
+              <Link href="tel:+977123456789">+977 984166241</Link>
+            </p>
+            <p className="flex items-center gap-2 text-sm">
               <Mail size={16} />
               <Link href="mailto:hello@espressoorganic.com">
                 hello@espressoorganic.com

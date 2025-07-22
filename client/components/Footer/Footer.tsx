@@ -2,7 +2,16 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import { Mail, Phone, MapPin } from "lucide-react";
+import Image from "next/image";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Instagram,
+  Youtube,
+  Heart,
+} from "lucide-react";
 
 export default function Footer() {
   const [year, setYear] = useState<number | null>(null);
@@ -12,11 +21,17 @@ export default function Footer() {
   }, []);
 
   return (
-    <footer className="bg-[#2B1E17] text-white py-16 px-6 md:px-12">
+    <footer className="bg-[#2B1E17] text-white py-16 px-6 md:px-12 font-lato">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
         {/* About */}
         <div>
-          <h3 className="text-xl font-semibold mb-4">Espresso Organic</h3>
+          <Image
+            src="/logo/espresso-white.svg"
+            alt="Espresso Organic"
+            width={120}
+            height={40}
+            className="mb-4"
+          />
           <p className="text-sm text-white/80 leading-relaxed">
             Rooted in craft and community, we blend premium organic coffee with
             hands-on barista education.
@@ -58,6 +73,18 @@ export default function Footer() {
               </a>
             </li>
             <li className="flex items-center gap-3">
+              <Phone size={16} />
+              <a href="tel:+9779849361711" className="hover:underline">
+                +977 9849361711
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
+              <Phone size={16} />
+              <a href="tel:+9779741662041" className="hover:underline">
+                +977 9741662041
+              </a>
+            </li>
+            <li className="flex items-center gap-3">
               <Mail size={16} />
               <a
                 href="mailto:hello@espressoorganic.com"
@@ -79,7 +106,7 @@ export default function Footer() {
             className="flex flex-col sm:flex-row gap-3"
             onSubmit={(e) => {
               e.preventDefault();
-              // Optionally handle submission
+              // handle submit
             }}
           >
             <input
@@ -95,12 +122,56 @@ export default function Footer() {
               Subscribe
             </button>
           </form>
+
+          {/* Social Icons */}
+          <div className="mt-6 flex gap-4">
+            <a
+              href="https://facebook.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Facebook"
+              className="hover:text-[#E9691D] transition"
+            >
+              <Facebook size={20} />
+            </a>
+            <a
+              href="https://instagram.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Instagram"
+              className="hover:text-[#E9691D] transition"
+            >
+              <Instagram size={20} />
+            </a>
+            <a
+              href="https://youtube.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="YouTube"
+              className="hover:text-[#E9691D] transition"
+            >
+              <Youtube size={20} />
+            </a>
+          </div>
         </div>
       </div>
 
       {/* Footer Bottom */}
       <div className="mt-12 border-t border-white/20 pt-6 text-center text-sm text-white/50">
-        &copy; {year ?? "----"} Espresso Organic. All rights reserved.
+        <div>
+          &copy; {year ?? "----"} Espresso Organic. All rights reserved.
+        </div>
+        <div className="mt-2 flex flex-col sm:flex-row justify-center items-center gap-2 text-white/60">
+          Brewed with <Heart size={16} fill="#FFC300" stroke="0" /> by
+          <a
+            href="https://oplyx.tech"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-white hover:underline font-medium"
+          >
+            Oplyx Technologies
+          </a>
+        </div>
       </div>
     </footer>
   );

@@ -83,7 +83,7 @@ export default function MainLayout({
       </head>
 
       <body
-        className={` antialiased font-semibold bg-[color:var(--color-background)] text-[color:var(--color-foreground)]`}
+        className={` antialiased  bg-[color:var(--color-background)] text-[color:var(--color-foreground)]`}
       >
         {/* ✅ GTM noscript fallback */}
         <noscript>
