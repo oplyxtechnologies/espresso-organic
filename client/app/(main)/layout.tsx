@@ -32,7 +32,7 @@ export default function MainLayout({
 }) {
   return (
     <div
-      className={`${lato.variable} ${reporter.variable} antialiased bg-[color:var(--color-background)] text-[color:var(--color-foreground)] s`}
+      className={`${lato.variable} ${reporter.variable} antialiased bg-[color:var(--color-background)] text-[color:var(--color-foreground)] font-lato`}
     >
       <Navbar />
       {children}
