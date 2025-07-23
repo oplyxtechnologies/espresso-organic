@@ -126,7 +126,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="mt-6 flex gap-4">
             <a
-              href="https://www.facebook.com/espressocoffee.org.ktm"
+              href="https://www.facebook.com/www.espressocoffee.com.np"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
