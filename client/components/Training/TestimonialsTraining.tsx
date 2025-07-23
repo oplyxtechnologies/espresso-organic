@@ -19,14 +19,14 @@ const testimonials: Testimonial[] = [
   {
     name: "Samuyal Magar",
     location: "Kathmandu",
-    text: "Best place for learning and boosting your self confidence while learning barista skills. Recommender 100%",
+    text: "One of the best experiences I had when I started learning barista course the environment was very calm and friendly.",
     rating: 5,
     image: "/testimonials/samuyal.png",
   },
   {
     name: "Storz Nepal",
     location: "Kathmandu",
-    text: "Their UI/UX design transformed our app’s experience. Great communication and flawless delivery.",
+    text: "Best place for learning and boosting your self confidence while learning barista skills. Recommender 100%",
     rating: 5,
     image: "/testimonials/Storz.png",
   },
