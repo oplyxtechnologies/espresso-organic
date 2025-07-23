@@ -1,24 +1,43 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function MissionVision() {
   return (
     <section className="bg-[#FFF8F2] px-4 md:px-10 lg:px-20 py-16">
-      <div className="bg-[#FFEFD9] rounded-2xl max-w-6xl mx-auto p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center">
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+        viewport={{ once: true }}
+        className="bg-[#FFEFD9] rounded-2xl max-w-6xl mx-auto p-6 md:p-10 flex flex-col md:flex-row gap-8 items-center"
+      >
         {/* Image */}
-        <div className="relative w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="relative w-full md:w-1/2 aspect-[4/3] rounded-xl overflow-hidden"
+        >
           <Image
-            src="/farm-visit.jpg" // Make sure this image exists in your /public folder
+            src="/farm-visit.jpg"
             alt="Chairman with coffee"
             fill
             className="object-cover"
             sizes="100vw"
           />
-        </div>
+        </motion.div>
 
         {/* Text Content */}
-        <div className="w-full md:w-1/2 text-[#2B1E17] space-y-6">
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+          viewport={{ once: true }}
+          className="w-full md:w-1/2 text-[#2B1E17] space-y-6"
+        >
           <div>
             <h3 className="font-reporter text-xl md:text-2xl mb-1">Mission</h3>
             <p className="text-[#2B1E17] text-sm md:text-base leading-relaxed">
@@ -38,8 +57,8 @@ export default function MissionVision() {
               come together.
             </p>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

@@ -1,12 +1,20 @@
-// components/WhoStarted.tsx
+"use client";
+
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function WhoStarted() {
   return (
     <section id="journey" className="bg-[#FFF8F2] py-20 px-4 md:px-10 lg:px-20">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-12">
         {/* Text Content */}
-        <div className="md:w-1/2">
+        <motion.div
+          initial={{ opacity: 0, x: -40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          viewport={{ once: true }}
+          className="md:w-1/2"
+        >
           <h2 className="text-3xl md:text-4xl font-reporter text-[#2B1E17] mb-4">
             Meet the Visionary Behind the Brew
           </h2>
@@ -23,18 +31,24 @@ export default function WhoStarted() {
             community. His commitment to education, organic sourcing, and
             genuine hospitality shaped Espresso Organic into what it is today.
           </p>
-        </div>
+        </motion.div>
 
         {/* Image */}
-        <div className="md:w-1/2 p-4 flex justify-center">
+        <motion.div
+          initial={{ opacity: 0, x: 40 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.7, ease: "easeOut", delay: 0.2 }}
+          viewport={{ once: true }}
+          className="md:w-1/2 p-4 flex justify-center"
+        >
           <Image
-            src="/images/chairman.jpeg" // Replace with your actual path
+            src="/images/chairman.jpeg"
             width={400}
             height={400}
             alt="Man Bahadur Shrestha, Chairman of Espresso Organic"
-            className="rounded-lg  max-w-sm md:max-w-md"
+            className="rounded-lg max-w-sm md:max-w-md"
           />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

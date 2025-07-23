@@ -1,11 +1,12 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const teamMembers = [
   {
-    name: "Man bahadur Shrestha",
-    role: "Founder/ Chairman",
+    name: "Man Bahadur Shrestha",
+    role: "Founder / Chairman",
     image: "/images/chairman.jpeg",
   },
   {
@@ -32,14 +33,24 @@ export default function TeamSection() {
       <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 text-left">
         {teamMembers.map((member, i) => (
           <div key={i} className="flex flex-col items-center">
-            <div className="w-full aspect-square relative rounded-xl overflow-hidden mb-4">
+            <motion.div
+              initial={{ clipPath: "inset(0% 0% 100% 0%)" }}
+              whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
+              transition={{
+                duration: 0.8,
+                ease: "easeOut",
+                delay: i * 0.2,
+              }}
+              viewport={{ once: true }}
+              className="w-full aspect-square relative rounded-xl overflow-hidden mb-4"
+            >
               <Image
                 src={member.image}
                 alt={member.name}
                 fill
                 className="object-cover"
               />
-            </div>
+            </motion.div>
             <h3 className="font-semibold text-lg text-[#2B1E17]">
               {member.name}
             </h3>

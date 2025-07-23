@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const burgerImages = [
   { src: "/burger/top-bun.jpeg", alt: "Top Bun" },
@@ -29,19 +30,23 @@ export default function CafeGlimpse() {
       </div>
 
       {/* Burger Image Layout */}
-      <div className="max-w-4xl mx-auto flex px-22 flex-col opacity-90 gap-4 items-center">
+      <div className="max-w-4xl mx-auto flex flex-col opacity-90 gap-4 items-center">
         {burgerImages.map((img, i) => {
           const isTop = i === 0;
           const isMiddle = i === 1;
           const isBottom = i === 2;
 
           return (
-            <div
+            <motion.div
               key={i}
+              initial={{ clipPath: "inset(0% 0% 100% 0%)" }}
+              whileInView={{ clipPath: "inset(0% 0% 0% 0%)" }}
+              transition={{ duration: 0.8, ease: "easeOut", delay: i * 0.3 }}
+              viewport={{ once: true }}
               className={`relative overflow-hidden ${
                 isMiddle
-                  ? "w-[120%] md:w-[130%] h-10 md:h-48 rounded-lg " // Wider lettuce layer
-                  : "w-[100%] md:w-[110%] h-[100px] md:h-[150px] "
+                  ? "w-[90%] md:w-[100%] h-10 md:h-48 rounded-lg"
+                  : "w-[80%] md:w-[90%] h-[100px] md:h-[150px]"
               } ${
                 isTop
                   ? "rounded-t-[50px] md:rounded-t-[140px] h-[100px] md:h-[150px]"
@@ -57,7 +62,7 @@ export default function CafeGlimpse() {
                 className="object-cover"
                 sizes="100vw"
               />
-            </div>
+            </motion.div>
           );
         })}
       </div>
