@@ -85,9 +85,15 @@ export default function CourseEnquiryForm() {
           className="w-full px-4 py-3 rounded-md border border-[#E5E5E5] bg-white text-[#2B1E17] focus:outline-none focus:ring-2 focus:ring-[#E9691D]"
         >
           <option value="">Select Course</option>
-          <option value="Barista Training">Barista Training</option>
-          <option value="Latte Art">Latte Art</option>
-          <option value="Coffee Brewing">Coffee Brewing</option>
+          <option value="15 Days Basic Barista Course">
+            15 Days Basic Barista Course
+          </option>
+          <option value="22 Days Advance Barista Course">
+            22 Days Advance Barista Course
+          </option>
+          <option value="1 Month Full Barista Course">
+            1 Month Full Barista Course
+          </option>
         </select>
       </div>
 
