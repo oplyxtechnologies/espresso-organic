@@ -126,7 +126,7 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="mt-6 flex gap-4">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/espressocoffee.org.ktm"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Facebook"
@@ -135,7 +135,7 @@ export default function Footer() {
               <Facebook size={20} />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/espresso_organic_coffee_house/"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
@@ -143,7 +143,7 @@ export default function Footer() {
             >
               <Instagram size={20} />
             </a>
-            <a
+            {/* <a
               href="https://youtube.com"
               target="_blank"
               rel="noopener noreferrer"
@@ -151,7 +151,7 @@ export default function Footer() {
               className="hover:text-[#E9691D] transition"
             >
               <Youtube size={20} />
-            </a>
+            </a> */}
           </div>
         </div>
       </div>
