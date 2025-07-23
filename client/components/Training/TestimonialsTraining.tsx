@@ -24,11 +24,11 @@ const testimonials: Testimonial[] = [
     image: "/testimonials/samuyal.png",
   },
   {
-    name: "Storz Nepal",
+    name: "Abishek Dahal",
     location: "Kathmandu",
-    text: "Best place for learning and boosting your self confidence while learning barista skills. Recommender 100%",
+    text: "The level of service was amazing. Clean place ,taste of coffee was up to the mark. Friendly owners hospitality was worth of 5 star Recommend for short coffee hangout.",
     rating: 5,
-    image: "/testimonials/Storz.png",
+    image: "/testimonials/storz.png",
   },
   {
     name: "Yushan Khadka",
