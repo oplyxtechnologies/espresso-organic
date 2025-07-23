@@ -15,9 +15,9 @@ const teamMembers = [
     image: "/images/barista.jpg",
   },
   {
-    name: "Dalai Tamang",
+    name: "Rashmita Tamang",
     role: "Head Trainer",
-    image: "/images/dalailama.jpg",
+    image: "/images/rasmita.jpeg",
   },
 ];
 
