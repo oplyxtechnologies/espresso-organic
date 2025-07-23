@@ -28,7 +28,7 @@ const testimonials: Testimonial[] = [
     location: "Kathmandu",
     text: "The level of service was amazing. Clean place ,taste of coffee was up to the mark. Friendly owners hospitality was worth of 5 star Recommend for short coffee hangout.",
     rating: 5,
-    image: "/testimonials/Storz.png",
+    image: "/testimonials/storz.png",
   },
   {
     name: "Yushan Khadka",
