@@ -8,7 +8,7 @@ const timelineItems = [
   {
     title: "Started with Passion",
     description:
-      "We began in 2013 with a love for espresso and hands-on learning.",
+      "We began in 2012 with a love for espresso and hands-on learning.",
     icon: <Coffee size={20} />,
   },
   {
